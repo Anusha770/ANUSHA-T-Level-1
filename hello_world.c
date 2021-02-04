@@ -3,6 +3,6 @@
 #include<conio.h>
 int main()
 {
-  printf("ANUSHA T");
+  printf("ANUSHA T\n");
   return 0;
 }
