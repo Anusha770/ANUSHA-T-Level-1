@@ -2,10 +2,12 @@
 #include<stdio.h>
 int main()
 {
-  int a, b,s;
-  printf("Enter the two numbers:");
-  scanf("%d%d",&a,&b);
-  s=a+b;
-  printf("sum of %d and %d is %d",a,b,s);
+  int x,n,total;
+  printf("enter the total numbers\n");
+  scanf("%d",&x);
+  total=0;
+  for(n=0;n<=x;n++)
+  total=total+n;
+  printf("the sum of %d numbers is %d",x,total);
   return 0;
 }
