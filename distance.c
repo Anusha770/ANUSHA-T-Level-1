@@ -22,9 +22,9 @@ void output(float a,float b,float c,float d,float e)
 int main()
 {
     float c,a,a1,b,b1;
-    printf("Enter the X coordinate:\n");
+    printf("Enter the a coordinate:\n");
     a=input();
-    printf("Enter the Y coordinate:\n");
+    printf("Enter the b coordinate:\n");
     b=input();
     printf("Enter the a1 coordinate:\n");
     a1=input();
