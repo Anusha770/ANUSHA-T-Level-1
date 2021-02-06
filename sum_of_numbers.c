@@ -2,12 +2,17 @@
 #include<stdio.h>
 int main()
 {
-  int x,n,total;
-  printf("enter the total numbers\n");
-  scanf("%d",&x);
-  total=0;
-  for(n=0;n<=x;n++)
-  total=total+n;
-  printf("the sum of %d numbers is %d",x,total);
-  return 0;
+   int n,num,total,c;
+   total=0;
+   printf("enter the total numbers\n");
+   scanf("%d",&n);
+   printf("enter the numbers:");
+   for(c=1;c<=n;c++)
+    {
+       scanf("%d",&num);
+       total=total+num:
+     }
+    printf("the total sum of %d numbers is %d",n,total);
+    return 0;
 }
+
