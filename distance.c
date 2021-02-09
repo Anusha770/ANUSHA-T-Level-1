@@ -22,13 +22,13 @@ void output(float a,float b,float c,float d,float e)
 int main()
 {
     float c,a,a1,b,b1;
-    printf("Enter the a coordinate:\n");
+    printf("Enter the a value:\n");
     a=input();
-    printf("Enter the b coordinate:\n");
+    printf("Enter the b value:\n");
     b=input();
-    printf("Enter the a1 coordinate:\n");
+    printf("Enter the a1 value:\n");
     a1=input();
-    printf("Enter the b1 coordinate:\n");
+    printf("Enter the b1 value:\n");
     b1=input();
     c=distance(a,b,a1,b1);
     output(c,a,b,a1,b1);
