@@ -8,20 +8,26 @@
        int n,d;
     };
     
+    int g(int a , int b)
+    {
+    int gcd=1,i=1;
+   
+    while (i<=a&&i<=b)
+    {
+    if(a%i==0&&b%i==0)
+    gcd=i;
+    i++;
+    }
+    return gcd;
+    }
      struct point compute(struct point a,struct point b)
     {
     struct point sum;
-    if(a.d==b.d)
-    {
-        sum.n=a.n+b.n;
-        sum.d=a.d;
-        
-    }
-    else
-    {
         sum.n=(a.n*b.d)+(b.n*a.d);
         sum.d=a.d*b.d;
-    }
+        int gcd=g(sum.n,sum.d);
+        sum.d=(sum.d)/gcd;
+        sum.n=(sum.n)/gcd;
     return sum;
     }
     struct point input()
@@ -46,4 +52,3 @@
         printf("sum=%d/%d",c.n,c.d);
         return 0;
     }
-     
