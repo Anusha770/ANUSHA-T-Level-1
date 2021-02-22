@@ -40,6 +40,10 @@
         return n;
     }
      
+ void out(struct point c)
+    {
+        printf("sum=%d/%d",c.n,c.d);
+    }
 
 
     int main()
@@ -49,6 +53,6 @@
         b=input();
         c=compute(a,b);
        
-        printf("sum=%d/%d",c.n,c.d);
+        out(c);
         return 0;
     }
