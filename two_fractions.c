@@ -23,9 +23,10 @@
      struct point compute(struct point a,struct point b)
     {
     struct point sum;
+         int gcd;
         sum.n=(a.n*b.d)+(b.n*a.d);
         sum.d=a.d*b.d;
-        int gcd=g(sum.n,sum.d);
+        gcd=g(sum.n,sum.d);
         sum.d=(sum.d)/gcd;
         sum.n=(sum.n)/gcd;
     return sum;
