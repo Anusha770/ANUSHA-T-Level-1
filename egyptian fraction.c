@@ -6,6 +6,7 @@ struct fraction
 	int den;
 };
 typedef struct fraction fract;
+
 struct efraction{
 int n;
 int deno[200];
@@ -16,7 +17,7 @@ typedef struct efraction efract;
 int input()
 {
 int n;
-printf("enter the number of total fractios:");
+printf("enter the number of total fractions:");
 scanf("%d",&n);
 return n;
 }
@@ -38,16 +39,13 @@ input1(&a[i]);
 
 int gcd(int a,int b)
 {
-a=a<b?a:b;
-if(b%a==0)
-return a;
-
-for(int i=a/2;i>=2;i--)
+int GCD=1;
+for(int i=2;i<=a&&i<=b;i++)
 {
 if(a%i==0&&b%i==0)
-return i;
+GCD= i;
 }
-return 1;
+return GCD;
 }
 
 void compute(efract*a)
@@ -95,4 +93,5 @@ compute_n(a,n);
 output_n(a,n);
 return 0;
 }
+
 
